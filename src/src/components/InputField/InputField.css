@@ -1,0 +1,66 @@
+.InputField {
+    display: flex;
+    flex-direction: row nowrap;
+    align-items: center;
+    height: 2.75rem;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    padding: 0.75rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .InputField.compact {
+    height: 2.75rem;
+    background: none;
+    border-radius: 0;
+    padding-left: 0;
+  }
+  
+  .InputField.compact input {
+    color: #fff;
+  }
+  
+  .InputField.compact ::placeholder {
+    color: #aaa;
+  }
+  
+  .icon-box {
+    height: 1.5rem;
+    width: 1.5rem;
+    flex: none;
+  }
+  
+  .input {
+    border: none;
+    background: none;
+    flex: none;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem;
+    width: calc(100% - 0.75rem);
+  }
+  
+  .input.left {
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .input.right {
+    border-radius: 8px 0 0 8px;
+  }
+  
+  @media all and (min-width: 767px) {
+    .InputField {
+      height: 3.5rem;
+    }
+  
+    .icon-box {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .input {
+      width: calc(100% - 2rem);
+    }
+  }

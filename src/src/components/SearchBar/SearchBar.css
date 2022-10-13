@@ -1,0 +1,75 @@
+.SearchBar-container {
+    position: absolute;
+    width: 100%;
+    top: 14.5rem;
+    z-index: 10;
+    height: 14rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .SearchBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .SearchBar > * {
+    margin-bottom: 1.25rem;
+  }
+  
+  .SearchBar > *:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media all and (min-width: 767px) {
+    .SearchBar-container {
+      top: 20rem;
+    }
+  
+    .SearchBar {
+      flex-direction: row;
+      margin: 0 auto;
+      position: sticky;
+      top: 0.75rem;
+    }
+  
+    .SearchBar > * {
+      margin: 0 1.25rem 0 0;
+    }
+  
+    .SearchBar > *:last-child {
+      margin: 0;
+    }
+  
+    .SearchBar > :nth-child(1) {
+      width: 377px;
+    }
+  
+    .SearchBar > :nth-child(2) {
+      width: 275px;
+    }
+  
+    .SearchBar-container.top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      height: 4.25rem;
+      background: var(--brand-secondary);
+    }
+  
+    .SearchBar.top {
+      flex-direction: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    .SearchBar.top > :nth-child(1) {
+      width: 365px;
+    }
+  
+    .SearchBar.top > :nth-child(2) {
+      width: 245px;
+    }
+  }
